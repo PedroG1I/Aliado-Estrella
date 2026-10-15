@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aliado Estrella · Ayni: Tejemos juntos los deseos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#0057b8;--tq:#00867f;--tqb:#00b5aa;--bg:#fff;--sf:#eaf1fb;--mint:#d5f1ee;--tx:#15294a;--mu:#4a5b78;--bd:#cfd9ea;--co:#c8372d;--ok:#12724a;--ok-bg:#e0f4ea;--er-bg:#fde8e6;--wn:#fff4d6;--wnt:#5c4300;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bl:#6aa9ff;--tq:#3fd6cb;--tqb:#2cbfb4;--bg:#0d1526;--sf:#16223b;--mint:#12303a;--tx:#e8eefa;--mu:#a6b4cf;--bd:#2c3b5a;--co:#ff8a80;--ok:#6fe0a8;--ok-bg:#12332a;--er-bg:#3a1a1a;--wn:#3a3010;--wnt:#ffe9a6}}
+:root[data-theme=dark]{--bl:#6aa9ff;--tq:#3fd6cb;--tqb:#2cbfb4;--bg:#0d1526;--sf:#16223b;--mint:#12303a;--tx:#e8eefa;--mu:#a6b4cf;--bd:#2c3b5a;--co:#ff8a80;--ok:#6fe0a8;--ok-bg:#12332a;--er-bg:#3a1a1a;--wn:#3a3010;--wnt:#ffe9a6}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;font:400 17px/1.6 Lato,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+h1,h2,h3{font-family:'Droid Serif','Noto Serif',Georgia,serif;color:var(--bl);line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.4rem)}h2{font-size:clamp(1.5rem,3.4vw,2.2rem)}h3{font-size:1.2rem}
+a{color:var(--bl)}img,svg{max-width:100%}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+.sec{padding:64px 0;position:relative}
+.btn{display:inline-block;border:2px solid transparent;border-radius:10px;padding:13px 24px;font:700 1rem Lato,Arial,sans-serif;cursor:pointer;text-decoration:none;text-align:center;background:var(--tq);color:#fff;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+:root[data-theme=dark] .btn,.btn.on-dark{color:#06201e}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .btn{color:#06201e}}
+.btn.alt{background:transparent;color:var(--bl);border-color:var(--bl)}
+.btn.sm{padding:9px 16px;font-size:.92rem}
+:focus-visible{outline:3px solid var(--co);outline-offset:3px}
+.top{background:#0057b8;color:#fff;font-size:.85rem;padding:6px 0}.top a{color:#fff}
+header.nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--bd)}
+.nav .w{display:flex;align-items:center;gap:20px;min-height:72px}
+.logo{border:2px dashed var(--bd);border-radius:8px;padding:6px 12px;font:700 .75rem Lato;color:var(--mu);text-decoration:none;line-height:1.2}
+.nav nav{display:flex;gap:22px;margin-left:auto;align-items:center}
+.nav nav a{text-decoration:none;font-weight:700;color:var(--tx)}.nav nav a:hover{color:var(--bl)}
+.burger{display:none;margin-left:auto;background:none;border:2px solid var(--bd);border-radius:8px;padding:8px 12px;color:var(--tx);font:700 1rem Lato;cursor:pointer}
+@media(max-width:860px){.burger{display:block}.nav nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);padding:16px 20px;border-bottom:1px solid var(--bd);gap:14px}.nav nav.open{display:flex}}
+.hero{background:linear-gradient(180deg,var(--mint),var(--bg));overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;padding-top:48px;padding-bottom:48px}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}}
+.kick{font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:var(--tq)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.thr{stroke:var(--bl);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:600;stroke-dashoffset:600;animation:dr 2.2s ease forwards}
+.thr.t2{stroke:var(--tqb);animation-delay:.3s}.thr.t3{stroke:var(--co);animation-delay:.6s;opacity:.8}
+.star{fill:var(--bl);opacity:0;animation:fi 1s 1.6s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}@keyframes fi{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.thr{stroke-dashoffset:0}.star{opacity:1}}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+.alt-bg{background:var(--sf)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:var(--bg);border:1px solid var(--bd);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card .b{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card svg{display:block;width:100%;height:auto;background:var(--sf)}
+.tag{display:inline-block;background:var(--wn);color:var(--wnt);font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:99px;align-self:flex-start}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;counter-reset:s;position:relative}
+.step{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:24px;position:relative}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--bl);color:var(--bg);font-weight:900;margin-bottom:12px}
+details{border:1px solid var(--bd);border-radius:12px;padding:0 18px;margin-bottom:10px;background:var(--bg)}
+summary{cursor:pointer;font-weight:700;padding:16px 0;color:var(--bl);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-size:1.4rem;line-height:1}details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:var(--mu)}
+.cta{background:var(--bl);color:#fff;text-align:center;border-radius:24px;padding:56px 24px}
+.cta h2{color:#fff}.cta .btn{background:#fff;color:#003a7a}
+footer{background:var(--sf);padding:40px 0;font-size:.92rem;color:var(--mu);margin-top:40px}
+footer a{margin-right:16px}
+.note{background:var(--wn);color:var(--wnt);border-radius:10px;padding:10px 14px;font-size:.92rem;font-weight:700}
+.msg{border-radius:10px;padding:12px 16px;font-weight:700;margin:12px 0}
+.msg.ok{background:var(--ok-bg);color:var(--ok)}.msg.er{background:var(--er-bg);color:var(--co)}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input[type=text],input[type=email]{width:100%;padding:12px 14px;border:2px solid var(--bd);border-radius:10px;font:inherit;background:var(--bg);color:var(--tx)}
+input[aria-invalid=true]{border-color:var(--co)}
+.err{color:var(--co);font-size:.88rem;font-weight:700;min-height:1.2em;margin:4px 0 0}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}.chk input{margin-top:6px;width:20px;height:20px}
+.form{max-width:640px;margin:0 auto;background:var(--bg);border:1px solid var(--bd);border-radius:20px;padding:28px}
+.prog{display:flex;gap:0;max-width:640px;margin:0 auto 24px;padding:0;list-style:none}
+.prog li{flex:1;text-align:center;font-size:.82rem;font-weight:700;color:var(--mu);position:relative}
+.prog li:before{content:attr(data-n);display:grid;place-items:center;width:34px;height:34px;margin:0 auto 6px;border-radius:50%;background:var(--sf);border:2px solid var(--bd);position:relative;z-index:1}
+.prog li:after{content:"";position:absolute;top:16px;left:calc(50% + 17px);width:calc(100% - 34px);height:2px;background:var(--bd)}
+.prog li:last-child:after{display:none}
+.prog li.done:before,.prog li.cur:before{background:var(--bl);color:var(--bg);border-color:var(--bl)}.prog li.done:after{background:var(--bl)}.prog li.cur{color:var(--bl)}
+.row{display:flex;justify-content:space-between;gap:12px;margin-top:24px;flex-wrap:wrap}
+.sum{background:var(--sf);border-radius:12px;padding:14px 18px;margin:14px 0}.sum div{display:flex;justify-content:space-between;padding:4px 0}
+.pay{border:2px dashed var(--bd);border-radius:12px;padding:20px;text-align:center;color:var(--mu)}
+.dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.pan{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:22px}
+.pan.full{grid-column:1/-1}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--bd)}
+.st{font-weight:700;color:var(--ok)}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:12px 20px;border-radius:10px;font-weight:700;z-index:50;max-width:90%;display:none}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="top"><div class="w">✉ <a href="mailto:deseos@makeawishperu.org">deseos@makeawishperu.org</a> &nbsp;·&nbsp; Sitio de demostración — contenido provisional</div></div>
+<header class="nav"><div class="w">
+<a class="logo" href="#/" aria-label="Inicio">[ Espacio para logotipo oficial<br>Make-A-Wish Perú ]</a>
+<button class="burger" id="bg" aria-expanded="false" aria-controls="nv">☰ Menú</button>
+<nav id="nv" aria-label="Principal">
+<a href="#/" data-s="deseos">Conoce los deseos</a><a href="#/" data-s="como">Cómo funciona</a><a href="#/" data-s="faq">Preguntas frecuentes</a><a href="#/mi-espacio">Mi espacio</a>
+<a class="btn sm" href="#/unete">Hazte Aliado Estrella</a></nav></div></header>
+<main id="main"></main>
+<footer><div class="w"><p><strong>Make-A-Wish Perú</strong> · Aliado Estrella</p>
+<p><a href="#" data-ph>Privacidad (URL pendiente)</a><a href="#" data-ph>Términos (URL pendiente)</a><a href="mailto:deseos@makeawishperu.org">Contacto</a></p>
+<p>Demostración: no procesa pagos reales ni guarda datos. Historias de ejemplo ficticias.</p></div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=(s,r=document)=>r.querySelector(s), M=$('#main');
+const WISHES=[
+ {id:'espacio',t:'Explorar el espacio',c:'#0057b8',i:'Un niño sueña con ver las estrellas de cerca.',m:'Un deseo para mirar más allá del cielo de todos los días.',s:'Ejemplo ficticio: «Mateo» (nombre inventado) pasa las noches dibujando planetas y preguntando cómo se forman las constelaciones. Su deseo es visitar un planetario y conversar con quienes estudian el cielo. Para él, no es un escape: es ir al lugar donde sus preguntas cobran vida.',p:'M20 120 Q80 20 150 70 T280 30'},
+ {id:'arte',t:'Disfrutar del arte',c:'#00867f',i:'Una niña quiere llenar un lienzo de color.',m:'Un deseo para crear sin límites y compartir lo que imagina.',s:'Ejemplo ficticio: «Luciana» (nombre inventado) transforma cualquier papel en un mundo de colores. Desea pasar un día con artistas, probar pinceles y materiales nuevos y llevarse una obra propia. Su historia trata de lo que ella crea, no de lo que atraviesa.',p:'M20 110 C70 20 120 140 170 60 S260 90 285 40'},
+ {id:'lugar',t:'Conocer un lugar especial',c:'#c8372d',i:'Una familia viaja a un sitio que siempre soñó conocer.',m:'Un deseo para vivir un momento compartido y recordarlo siempre.',s:'Ejemplo ficticio: «Diego» (nombre inventado) sueña con conocer una montaña que vio en un libro. Su deseo es recorrerla con su familia, mirar el paisaje y volver con historias que contar. Lo más importante para él es ir acompañado.',p:'M20 130 L90 60 L140 100 L210 30 L285 120'}];
+const FAQ=[['¿Qué es Aliado Estrella?','Es el programa de donantes mensuales de Make-A-Wish Perú para enriquecer las experiencias de niños y niñas con enfermedades graves en el Perú.'],
+['¿Cómo funciona la donación mensual?','Texto provisional: eliges sumarte con un aporte recurrente. Las condiciones oficiales (monto, fecha de cobro, medios de pago) serán confirmadas por Make-A-Wish Perú.'],
+['¿Cómo se utiliza mi aporte?','Texto provisional: los aportes contribuyen a la labor de la organización. El detalle oficial de su uso será proporcionado por Make-A-Wish Perú.'],
+['¿Cómo puedo consultar mis aportes?','En «Mi espacio» podrás ver tu historial. En esta demo se muestran datos simulados.'],
+['¿Cómo actualizo mi medio de pago?','Texto provisional: desde «Mi espacio» → «Gestionar mi aporte». El proceso real dependerá del proveedor de pagos autorizado.'],
+['¿Cómo puedo solicitar la baja?','Texto provisional: podrás solicitarla desde «Mi espacio» o escribiendo a deseos@makeawishperu.org. Condiciones por confirmar.'],
+['¿Dónde puedo contactar a Make-A-Wish Perú?','Escríbenos a deseos@makeawishperu.org o por WhatsApp al +51 981 047 075 (datos tomados del sitio actual).']];
+const art=(w,h=150)=>`<svg viewBox="0 0 300 ${h}" role="img" aria-label="Ilustración de hilos: ${w.t}"><path d="${w.p}" fill="none" stroke="${w.c}" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 7"/><path d="${w.p}" fill="none" stroke="${w.c}" stroke-width="3" stroke-linecap="round" opacity=".35" transform="translate(0,10)"/><circle cx="150" cy="70" r="6" fill="${w.c}"/></svg>`;
+const star=(c)=>`<svg viewBox="0 0 400 360" role="img" aria-label="Hilos que se unen y forman una estrella"><g class="thr"><path d="M10 40 C120 40 140 120 200 160"/></g><g class="thr t2"><path d="M10 180 C100 170 150 170 200 160"/></g><g class="thr t3"><path d="M20 330 C110 290 160 220 200 160"/></g><path class="thr" d="M200 40 L232 128 L326 132 L252 190 L278 280 L200 228 L122 280 L148 190 L74 132 L168 128 Z" style="animation-delay:1s"/><path class="star" d="M200 70 L222 135 L290 138 L236 180 L256 246 L200 208 L144 246 L164 180 L110 138 L178 135 Z"/></svg>`;
+const wishCard=w=>`<article class="card">${art(w)}<div class="b"><span class="tag">Ejemplo ficticio</span><h3>${w.t}</h3><p>${w.i} ${w.m}</p><a href="#/deseo/${w.id}" class="btn alt sm" style="align-self:flex-start;margin-top:auto">Conoce la historia</a></div></article>`;
+const HOME=()=>`
+<section class="hero"><div class="w"><div><p class="kick">Ayni: Tejemos juntos los deseos</p><h1 tabindex="-1">Un deseo es demasiado grande para brillar solo</h1>
+<p>Cada aporte suma un hilo. Juntos, podemos contribuir a hacer realidad los deseos de niños y niñas con enfermedades graves.</p>
+<div class="ctas"><a class="btn" href="#/unete">Quiero ser Aliado Estrella</a><a class="btn alt" href="#/" data-s="como">Conoce cómo funciona</a></div></div>${star()}</div></section>
+<section class="sec"><div class="w cols"><div><h2>La ayuda que recibimos puede continuar en alguien más</h2>
+<p>En la familia y la comunidad aprendemos que ayudar y ser ayudados va y viene: eso es el <strong>ayni</strong>. Muchas personas recuerdan un apoyo que las acompañó en un momento importante.</p>
+<p>Ser Aliado Estrella es una forma de dejar que esa solidaridad continúe en otros, con un aporte mensual libre y voluntario. No es una deuda ni una obligación: es sumar tu hilo a un tejido que ya existe.</p></div>
+<svg viewBox="0 0 320 240" role="img" aria-label="Varios hilos conectados en una estrella"><g fill="none" stroke-width="2.5" stroke-linecap="round"><path stroke="var(--bl)" d="M20 30 Q120 40 160 120"/><path stroke="var(--tqb)" d="M300 40 Q200 50 160 120"/><path stroke="var(--co)" d="M30 210 Q120 190 160 120"/><path stroke="var(--bl)" d="M300 210 Q200 190 160 120"/></g><path d="M160 70 L172 108 L212 110 L180 134 L192 172 L160 150 L128 172 L140 134 L108 110 L148 108Z" fill="var(--bl)"/></svg></div></section>
+<section class="sec alt-bg" id="deseos"><div class="w"><h2>Conoce los deseos</h2><p>Historias de ejemplo ficticias. Tu aporte no financia a un niño en particular: se suma al trabajo colectivo de la organización.</p><div class="grid3">${WISHES.map(wishCard).join('')}</div></div></section>
+<section class="sec" id="como"><div class="w"><h2>Cómo funciona Aliado Estrella</h2><div class="steps">
+<div class="step"><h3>Conoce el programa</h3><p>Descubre cómo los aportes mensuales sostienen la labor de Make-A-Wish Perú.</p></div>
+<div class="step"><h3>Súmate con una donación mensual</h3><p>Es una donación recurrente. Monto ilustrativo: S/30 al mes (por validar con la organización).</p></div>
+<div class="step"><h3>Contribuye a que la ayuda continúe</h3><p>Tu hilo se une a otros y la solidaridad sigue su camino.</p></div></div></div></section>
+<section class="sec alt-bg" id="faq"><div class="w" style="max-width:780px"><h2>Transparencia y confianza</h2>${FAQ.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join('')}</div></section>
+<section class="sec"><div class="w"><div class="cta"><h2>Cada hilo cuenta. Juntos, tejemos deseos</h2><p>Forma parte de la comunidad de Aliados Estrella.</p><a class="btn" href="#/unete">Quiero ser Aliado Estrella</a></div></div></section>`;
+const WISH=id=>{const w=WISHES.find(x=>x.id===id);if(!w)return NF();return `<section class="sec"><div class="w" style="max-width:820px"><a href="#/" data-s="deseos">← Volver a los deseos</a><p class="tag" style="margin-top:16px">Historia de ejemplo ficticia</p><h1 tabindex="-1">${w.t}</h1><div class="card" style="margin-bottom:24px">${art(w,150)}</div>
+<h2>El significado del deseo</h2><p>${w.m}</p><h2>La historia</h2><p>${w.s}</p><h2>Cómo contribuyen los Aliados Estrella</h2><p>Los aportes mensuales se suman al trabajo de Make-A-Wish Perú para contribuir a hacer realidad deseos de niños y niñas con enfermedades graves. <em>(Texto provisional: el detalle oficial lo confirma la organización.)</em></p><a class="btn" href="#/unete">Súmate al tejido</a></div></section>`};
+const NF=()=>`<section class="sec"><div class="w"><h1 tabindex="-1">Página no encontrada</h1><a class="btn" href="#/">Volver al inicio</a></div></section>`;
+// Registro
+const R={step:1,name:'',email:'',priv:false,demo:false,errs:{}};
+const prog=()=>`<ol class="prog" aria-label="Progreso">${['Tu aporte','Tus datos','Tu medio de pago','Confirmación'].map((t,i)=>`<li data-n="${i+1}" class="${i+1<R.step?'done':i+1==R.step?'cur':''}" ${i+1==R.step?'aria-current="step"':''}>${t}</li>`).join('')}</ol>`;
+const sumBox=()=>`<div class="sum"><div><span>Aporte</span><strong>S/30 (ilustrativo)</strong></div><div><span>Frecuencia</span><strong>Mensual</strong></div>${R.step>2?`<div><span>Donante</span><strong>${esc(R.name)}</strong></div>`:''}</div>`;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const REG=()=>{let b='';
+ if(R.step==1)b=`<h2>Tu aporte</h2>${sumBox()}<p>Es una <strong>donación recurrente</strong>: se repetirá cada mes hasta que solicites la baja. Monto y condiciones provisionales, por confirmar con Make-A-Wish Perú.</p><div class="row"><span></span><button class="btn" data-go="2">Continuar</button></div>`;
+ if(R.step==2)b=`<h2>Tus datos</h2><label for="n">Nombre completo</label><input id="n" type="text" autocomplete="name" value="${esc(R.name)}" aria-describedby="en"><p class="err" id="en">${R.errs.n||''}</p><label for="e">Correo electrónico</label><input id="e" type="email" autocomplete="email" value="${esc(R.email)}" aria-describedby="ee"><p class="err" id="ee">${R.errs.e||''}</p>
+ <label class="chk"><input id="p" type="checkbox" ${R.priv?'checked':''}><span>Acepto el aviso de privacidad y tratamiento de datos (texto legal por proporcionar).</span></label><p class="err">${R.errs.p||''}</p>
+ <div class="row"><button class="btn alt" data-go="1">Atrás</button><button class="btn" data-go="3">Continuar</button></div>`;
+ if(R.step==3)b=`<h2>Tu medio de pago</h2>${sumBox()}<div class="pay"><strong>Aquí se integrará el proveedor de pagos autorizado.</strong><br>Esta demo no solicita ni guarda datos de tarjeta.</div>
+ <label class="chk"><input id="d" type="checkbox" ${R.demo?'checked':''}><span>Entiendo que este registro es una simulación y no se realizará ningún cobro.</span></label><p class="err">${R.errs.d||''}</p>
+ <div class="row"><button class="btn alt" data-go="2">Atrás</button><button class="btn" data-go="4">Finalizar simulación</button></div>`;
+ if(R.step==4)b=`<div class="msg ok" role="status">Registro simulado completado (demostración)</div><h2>Gracias, ${esc(R.name)}</h2><p>No se procesó ningún pago ni se creó una afiliación real. En la versión final, esta pantalla se mostrará solo tras la confirmación del sistema.</p>${sumBox()}<p>Siguientes pasos: recibirías un correo en <strong>${esc(R.email)}</strong> y podrías ver tu historial en «Mi espacio».</p><div class="row"><a class="btn" href="#/mi-espacio">Ver Mi espacio (demo)</a><button class="btn alt" data-reset>Reiniciar demo</button></div>`;
+ return `<section class="sec"><div class="w"><h1 tabindex="-1" style="text-align:center">Únete al tejido</h1>${prog()}<div class="form" id="f">${b}</div></div></section>`};
+const mail=e=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e);
+function go(n){
+ if(n>R.step||n==R.step){ // validar al avanzar
+  if(R.step==2){R.name=$('#n').value.trim();R.email=$('#e').value.trim();R.priv=$('#p').checked;R.errs={};
+   if(R.name.length<3)R.errs.n='Ingresa tu nombre completo.';if(!mail(R.email))R.errs.e='Ingresa un correo válido.';if(!R.priv)R.errs.p='Debes aceptar el aviso para continuar.';
+   if(Object.keys(R.errs).length&&n>2){draw();$('#f [aria-invalid]')?.focus();return}}
+  if(R.step==3&&n>3){R.demo=$('#d').checked;R.errs={};if(!R.demo){R.errs.d='Confirma que entiendes que es una simulación.';draw();return}}
+ } else if(R.step==2){R.name=$('#n').value;R.email=$('#e').value;R.priv=$('#p').checked}
+ else if(R.step==3)R.demo=$('#d').checked;
+ R.step=n;R.errs={};draw();scrollTo(0,0);$('h1').focus();}
+const DASH=()=>`<section class="sec"><div class="w"><div class="note" role="note">DEMOSTRACIÓN: todos los datos de esta pantalla son simulados.</div><h1 tabindex="-1" style="margin-top:20px">Tu hilo forma parte de algo más grande</h1><p>Hola, ${R.name?esc(R.name):'Aliado/a Estrella (demo)'}.</p>
+<div class="dash"><div class="pan"><h3>Resumen de afiliación</h3><div class="sum"><div><span>Estado</span><strong class="st">Activa (simulada)</strong></div><div><span>Monto mensual</span><strong>S/30</strong></div><div><span>Próximo cobro</span><strong>15 nov 2026 (demo)</strong></div></div><button class="btn alt sm" data-t="Detalle de afiliación: se conectará al sistema real.">Ver detalle</button></div>
+<div class="pan"><h3>Gestionar mi aporte</h3><div class="acts"><button class="btn alt sm" data-t="Actualizar medio de pago: requiere proveedor de pagos autorizado.">Actualizar medio de pago</button><button class="btn alt sm" data-t="Condiciones: texto oficial por proporcionar.">Consultar condiciones</button><button class="btn alt sm" data-t="Gestión de afiliación: por integrar.">Gestionar afiliación</button><button class="btn alt sm" data-t="Proceso de baja: por definir con la organización.">Solicitar baja</button><a class="btn alt sm" href="mailto:deseos@makeawishperu.org">Contactar</a></div></div>
+<div class="pan full"><h3>Historial de aportes</h3><div style="overflow-x:auto"><table><thead><tr><th>Fecha</th><th>Monto</th><th>Estado</th><th>Constancia</th></tr></thead><tbody>${['15 oct 2026','15 sep 2026','15 ago 2026'].map(d=>`<tr><td>${d}</td><td>S/30</td><td class="st">Simulado</td><td><button class="btn alt sm" data-t="Constancia no disponible en la demo.">Descargar</button></td></tr>`).join('')}</tbody></table></div></div>
+<div class="pan full"><h3>El tejido colectivo</h3><p>Aquí se mostrarán noticias, resultados y avances verificados de Make-A-Wish Perú. <em>Sin indicadores de impacto hasta contar con información real y validada.</em></p></div></div></div></section>`;
+function draw(){const h=location.hash.replace(/^#\/?/,'');const [r,id]=h.split('/');
+ M.innerHTML=r==''?HOME():r=='deseo'?WISH(id):r=='unete'?REG():r=='mi-espacio'?DASH():NF();
+ if(r=='unete'){const f=$('#f');for(const k of ['n','e','p','d'])if(R.errs[k]){const el=$('#'+k);el&&el.setAttribute('aria-invalid','true')}
+  if(R.errs.n||R.errs.e||R.errs.p||R.errs.d)f.insertAdjacentHTML('afterbegin','<div class="msg er" role="alert">Revisa los campos marcados.</div>')}}
+function route(){draw();if(!pend){scrollTo(0,0);const h=$('h1');h&&h.focus({preventScroll:true})}}
+let pend=null;
+function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.i);toast.i=setTimeout(()=>e.style.display='none',3500)}
+document.addEventListener('click',e=>{
+ const a=e.target.closest('a[data-s]'),g=e.target.closest('[data-go]'),t=e.target.closest('[data-t]');
+ $('#nv').classList.remove('open');$('#bg').setAttribute('aria-expanded','false');
+ if(e.target.closest('[data-ph]')){e.preventDefault();toast('URL oficial pendiente de proporcionar.')}
+ if(a){e.preventDefault();const s=a.dataset.s;const sc=()=>setTimeout(()=>document.getElementById(s)?.scrollIntoView(),30);if(location.hash.replace('#','')===''||location.hash==='#/'){sc()}else{pend=1;location.hash='#/';setTimeout(()=>{sc();pend=null},60)}}
+ if(g)go(+g.dataset.go);if(t)toast(t.dataset.t);
+ if(e.target.closest('[data-reset]')){Object.assign(R,{step:1,name:'',email:'',priv:false,demo:false,errs:{}});draw()}});
+$('#bg').onclick=e=>{e.stopPropagation();const o=$('#nv').classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)};
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
